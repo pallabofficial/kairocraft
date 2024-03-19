@@ -7,14 +7,14 @@ import Button from "./components/Button";
 const App = () => {
   return (
     <>
-      hello
-      {/* <div className="pt-[4.75rem] overflow-hidden | lg:pt-[5.25rem]">
+      
+      <div className="pt-[4.75rem] overflow-hidden | lg:pt-[5.25rem]">
         <Header />
         
         <Hero/>
         
       </div>
-      <ButtonGradient /> */}
+      <ButtonGradient />
     </>
   );
 };
