@@ -7,7 +7,7 @@ const Section = ({ className, id, crosses, crossesOffset, customPaddings, childr
 
                               // -------------wrapper of each section--------- 
 
-    <div id={id} className={`relative ${customPaddings || 'py-10 lg:py-16 xl:py-20'} ${crosses ? 'lg:py-32 xl:py-40' : ''} ${className || ''}`}>
+    <div id={id} className={`relative ${customPaddings || 'py-10 lg:py-16 xl:py-20'} ${crosses ? 'lg:py-32 lg:pb-0 xl:py-40 xl:pb-0' : ''} ${className || ''}`}>
       
                                {/* -------------content of the section---------  */}
 
