@@ -9,7 +9,7 @@ import {LeftLine, RightLine} from "./design/Pricing";
 
 const Pricing = () => {
   return (
-    <Section id="pricing" className="overflow-hidden">   {/*wrapper of the whole pricing section */}
+    <Section id="pricing" crosses className="overflow-hidden">   {/*wrapper of the whole pricing section */}
 
         <div className="container relative z-2">
 

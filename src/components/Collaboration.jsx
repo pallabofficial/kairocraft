@@ -6,7 +6,7 @@ import {LeftCurve, RightCurve} from "./design/Collaboration"
 
 const Collaboration = () => {
   return (
-    <Section crosses>
+    <Section crosses className="mb-[10rem]">
         <div className="container lg:flex">
             <div className="max-w-[25rem] mb-8 | lg:mb-0">
                 <h2 className="h2 mb-4 md:mb-8">AI chat App for seamless collaboration</h2>     {/* title of the section */}

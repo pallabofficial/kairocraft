@@ -9,7 +9,7 @@ import Section from "./section"
 
 const Services = () => {
   return (
-    <Section id="how-to-use">
+    <Section id="how-to-use" crosses>
 
         <div className="container">
 
