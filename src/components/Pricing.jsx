@@ -26,12 +26,12 @@ const Pricing = () => {
             <Heading className="md:text-center" tag="Get started with Kairocraft" title="Pay once, use forever"/>         {/*heading of the pricing section */}
         
             <div className="relative">
-                <PricingList/>
-                <LeftLine/>
-                <RightLine/>
+                <PricingList/>              {/*display all the cards of different service packages  */}
+                <LeftLine/>                 {/*left border */}
+                <RightLine/>                {/*right border */}
             </div>
 
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-10">       {/*details button */}
                 <a href="./pricing" className="text-xs font-code font-bold tracking-wider uppercase border-b">See the full details</a> 
             </div>
             

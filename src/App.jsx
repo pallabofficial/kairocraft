@@ -3,10 +3,10 @@ import ButtonGradient from "./assets/svg/ButtonGradient";
 import Header from "./components/header"
 import Hero from "./components/Hero"
 import Benefits from "./components/Benefits"
-import Button from "./components/Button";
 import Collaboration from "./components/Collaboration";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
+import Roadmap from "./components/Roadmap";
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
         <Collaboration/>
         <Services/>
         <Pricing/>
+        <Roadmap/>
         
       </div>
       <ButtonGradient />
