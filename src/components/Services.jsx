@@ -24,7 +24,7 @@ const Services = () => {
                 <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden | lg:p-20 | xl:h-[46rem]">         {/*large box of the bento box*/}
                     
                     <div className="absolute top-0 left-0 w-full h-full pointer-events-none | md:w-3/5 | xl:w-auto">                                                                    {/*image wrapper div*/}
-                        <img src={service1} className="w-full h-full object-cover | md:object-right" width={800} height={730} alt="Smartest AI" />                                      {/*image of the large box of the bento box imported from assets folder*/}
+                        <img src={service1} className="w-full h-full object-cover | md:object-right" width={800} height={730} alt="Smartest AI" loading="lazy" />                                      {/*image of the large box of the bento box imported from assets folder*/}
                     </div>
 
                     <div className="relative z-1 max-w-[17rem] ml-auto ">                                    {/*wrapper div containing the services descriptions in text*/}
@@ -34,7 +34,7 @@ const Services = () => {
                         <ul className="body-2">
                             {brainwaveServices.map((item, index)=>(                                          //mapping through all services and rendering them as li element 
                                 <li key={index} className="flex items-start py-4 border-t border-n-6">
-                                    <img src={check} width={24} height={24} alt="" />
+                                    <img src={check} width={24} height={24} alt="" loading="lazy"/>
                                     <p className="ml-4">{item}</p>
                                 </li>
                             ))}
@@ -54,7 +54,7 @@ const Services = () => {
                     <div className="relative min-h-[39rem] border-n-1/10 rounded-3xl overflow-hidden">
 
                         <div className="absolute inset-0">                                                                          {/*image wrapper for the second box*/}
-                            <img src={service2} className="h-full w-full object-cover" width={630} height={750} alt="robot" />      {/*image  for the second box imported from assets*/}
+                            <img src={service2} className="h-full w-full object-cover" width={630} height={750} alt="robot" loading="lazy"/>      {/*image  for the second box imported from assets*/}
                         </div>
 
                         <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 | lg:p-15 ">                                    {/*wrapper div containing the services descriptions in text*/}
@@ -90,7 +90,7 @@ const Services = () => {
                                         
                                         <div className={index===2 ? 'flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]' : "" }>
                                             
-                                            <img src={item} width={24} height={24} alt={item}></img>            {/*icon*/}
+                                            <img src={item} width={24} height={24} alt={item} loading="lazy"></img>            {/*icon*/}
                                         
                                         </div>
 
@@ -104,7 +104,7 @@ const Services = () => {
 
                         <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden | md:h-[25rem]">
                             
-                            <img src={service3} className="w-full h-full object-cover " width={520} height={400} alt="evil robot" />        {/*evil robot image*/}
+                            <img src={service3} className="w-full h-full object-cover " width={520} height={400} alt="evil robot" loading="lazy" />        {/*evil robot image*/}
                             
                             <VideoChatMessage/>    {/*video chat message svg*/}
 

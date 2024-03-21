@@ -17,7 +17,7 @@ const Collaboration = () => {
                         <li key={item.id} className="mb-3 py-3">
                             <div className="flex items-center">
 
-                                <img src={check} width={24} height={24} alt="check" />          {/* logos of checkmark */}
+                                <img src={check} width={24} height={24} alt="check"loading="lazy"  />          {/* logos of checkmark */}
                                 <h6 className="body-2 ml-5">{item.title}</h6>                   {/* each benifit title */}
                                 
                             </div>
@@ -41,7 +41,7 @@ const Collaboration = () => {
                     <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">                                 {/* inner circle */}  
                         <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">                     {/* border gradient of the center svg */}  
                             <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                                <img src={brainwaveSymbol} width={48} height={48} alt="companyLogo" />                                                                  {/*  center svg */}
+                                <img src={brainwaveSymbol} width={48} height={48} alt="companyLogo"loading="lazy"  />                                                                  {/*  center svg */}
                             </div>
                         </div>
                     </div> 
@@ -53,7 +53,7 @@ const Collaboration = () => {
                             <li key={app.id} className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45}`}>           {/* rotating each logos by its index multiplied by 45 to place them in a circle (45 because there are 8 logos, 8*45=360 forming a circle) */} 
                                 
                                 <div className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${index * 45}`}>
-                                    <img src={app.icon} className="m-auto " width={app.width} height={app.height} alt={app.title} />                                       {/* collab apps logos */} 
+                                    <img loading="lazy" src={app.icon} className="m-auto " width={app.width} height={app.height} alt={app.title} />                                       {/* collab apps logos */} 
                                 </div>
 
                             </li>
