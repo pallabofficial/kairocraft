@@ -8,7 +8,7 @@ const Collaboration = () => {
   return (
     <Section crosses>
         <div className="container lg:flex">
-            <div className="max-w-[25rem]">
+            <div className="max-w-[25rem] mb-8 | lg:mb-0">
                 <h2 className="h2 mb-4 md:mb-8">AI chat App for seamless collaboration</h2>     {/* title of the section */}
                 
                 <ul className="max-w-[22rem] mb-10 | md:mb-14">                                 {/* list of all benifits */}
@@ -34,7 +34,7 @@ const Collaboration = () => {
 {/* -------------------------------------------right part of the screen (below part for small devices)------------------------------------ */}
         
             <div className="mt-4 | lg:ml-auto | xl:w-[38rem]">
-                <p className="body-2 mb-8 text-n-4 | md:mb-16 | lg:mb-32 lg:w-[22rem] lg:mx-auto">{collabText}</p>                  {/* promotional message imported from constants file */}
+                <p className="body-2 mb-15 text-n-4 | md:mb-16 | lg:mb-32 lg:w-[22rem] lg:mx-auto">{collabText}</p>                  {/* promotional message imported from constants file */}
 
                 <div className="w-[17rem] relative left-1/2 flex  aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 | md:w-[22rem] md:scale-100">                      {/*(outer circle) wrapper of the illustration containing  the logos in circular form */}
                     
