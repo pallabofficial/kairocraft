@@ -61,6 +61,7 @@ Front-end:-<br>
 Free to use<br><br>
 
 ## Acknowledgements
+•   Dribbble:- the UI is borrowed from Dribbble<br>
 •   AI tools (chatGPT, Gemini)<br>
 •   official documentations<br>
 •   all mentors and advisors<br><br>

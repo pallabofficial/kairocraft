@@ -27,7 +27,7 @@ const Collaboration = () => {
                 </ul>
 
                 <Button>                                                                          {/* try it now button */}
-                    Try it now
+                    <a href="#pricing">Try it now</a>
                 </Button>
             </div>
 

@@ -32,7 +32,7 @@ const Pricing = () => {
             </div>
 
             <div className="flex justify-center mt-10">       {/*details button */}
-                <a href="./pricing" className="text-xs font-code font-bold tracking-wider uppercase border-b">See the full details</a> 
+                <a href="#pricing" className="text-xs font-code font-bold tracking-wider uppercase border-b">See the full details</a> 
             </div>
             
         </div>

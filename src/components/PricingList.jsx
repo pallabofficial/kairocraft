@@ -29,7 +29,7 @@ const PricingList = () => {
             )}
           </div>
 
-          <Button className="w-full mb-6" href={item.price ? "/pricing" : "mailto:officialpallabmondal000@gmail.com"} white={!!item.price}>       {/*get started button */}
+          <Button className="w-full mb-6" href={item.price ? "#pricing" : "mailto:officialpallabmondal000@gmail.com"} white={!!item.price}>       {/*get started button */}
 
             {item.price ? "Get started" : "Contact us"}
 
