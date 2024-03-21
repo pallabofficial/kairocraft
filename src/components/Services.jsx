@@ -1,3 +1,5 @@
+//This file is a component for the services section of the webpage
+
 import { service1, service2, service3, check } from "../assets"
 import { brainwaveServices, brainwaveServicesIcons } from "../constants"
 import Generating from "./Generating"
@@ -16,7 +18,7 @@ const Services = () => {
             <div className="relative">     {/*the whole bento box wrapper*/}
 
 
-{/* ---------------------------------------------------(service-2) box-1(large box of the bento box)------------------------------------ */}
+{/* ---------------------------------------------------(service-1) box-1(large box of the bento box)------------------------------------ */}
                 
                 
                 <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden | lg:p-20 | xl:h-[46rem]">         {/*large box of the bento box*/}
@@ -81,12 +83,19 @@ const Services = () => {
                             <p className="body-2 mb-[2rem] text-n-3">The world&apos;s most powerful AI photo and video art generation engine. What will you create?</p>
                         
                             <ul className="flex items-center justify-between">
-                                {brainwaveServicesIcons.map((item, index)=>(
-                                    <li key={index} className={`rounded-2xl flex items-center justify-center ${index===2 ? 'w-[4.5rem] h-[4.5rem] p-0.25 bg-conic-gradient  md:h-[4.5rem]' : 'flex w-10 h-10 bg-n-6 md:w-15 md:h-15'}`}>
+                                
+                                {brainwaveServicesIcons.map((item, index)=>(          //mapping through each icons imported from the assets
+                                    
+                                    <li key={index} className={`rounded-2xl flex items-center justify-center ${index===2 ? 'w-[4.5rem] h-[4.5rem] p-0.25 bg-conic-gradient  md:h-[4.5rem]' : 'flex w-10 h-10 bg-n-6 md:w-15 md:h-15'}`}>      {/*the third icon has a conic background*/}
+                                        
                                         <div className={index===2 ? 'flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]' : "" }>
-                                            <img src={item} width={24} height={24} alt={item}></img>
+                                            
+                                            <img src={item} width={24} height={24} alt={item}></img>            {/*icon*/}
+                                        
                                         </div>
+
                                     </li>
+
                                 ))}
                                 
                             </ul>
@@ -94,9 +103,13 @@ const Services = () => {
                         </div>
 
                         <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden | md:h-[25rem]">
-                            <img src={service3} className="w-full h-full object-cover " width={520} height={400} alt="evil robot" />
-                            <VideoChatMessage/>
-                            <VideoBar/>
+                            
+                            <img src={service3} className="w-full h-full object-cover " width={520} height={400} alt="evil robot" />        {/*evil robot image*/}
+                            
+                            <VideoChatMessage/>    {/*video chat message svg*/}
+
+                            <VideoBar/>            {/*video play button svg*/}
+
                         </div>
 
                     </div>
