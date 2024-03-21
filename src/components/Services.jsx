@@ -2,6 +2,7 @@ import { service1, service2, service3, check } from "../assets"
 import { brainwaveServices, brainwaveServicesIcons } from "../constants"
 import Generating from "./Generating"
 import Heading from "./Heading"
+import { PhotoChatMessage } from "./design/Services"
 import Section from "./section"
 
 const Services = () => {
@@ -10,9 +11,13 @@ const Services = () => {
 
         <div className="container">
 
-            <Heading title="Generative AI made for creators" text="Kairocraft unlocks the potential of AI-powered applications"/>          {/*Heading and text of teh section*/}
+            <Heading title="Generative AI made for creators" text="Kairocraft unlocks the potential of AI-powered applications"/>          {/*Heading and text of the section*/}
         
-            <div className="relative">
+            <div className="relative">     {/*the whole bento box wrapper*/}
+
+
+{/* ---------------------------------------------------(service-2) box-1(large box of the bento box)------------------------------------ */}
+                
                 
                 <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden | lg:p-20 | xl:h-[46rem]">         {/*large box of the bento box*/}
                     
@@ -38,6 +43,37 @@ const Services = () => {
                     <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border | lg:left-1/2 lg:right-auto lg:bottom-8 lg:-translate-x-1/2 "/>                     {/*AI is generating box imported from Generating.jsx component*/}
                 
                 </div>
+
+{/* ---------------------------------------------------(service-2) box-2 of the bento box------------------------------------ */}
+
+
+                <div className="relative z-1 grid gap-5 | lg:grid-cols-2">
+
+                    <div className="relative min-h-[39rem] border-n-1/10 rounded-3xl overflow-hidden">
+
+                        <div className="absolute inset-0">                                                                          {/*image wrapper for the second box*/}
+                            <img src={service2} className="h-full w-full object-cover" width={630} height={750} alt="robot" />      {/*image  for the second box imported from assets*/}
+                        </div>
+
+                        <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 | lg:p-15 ">                                    {/*wrapper div containing the services descriptions in text*/}
+                        
+                            <h4 className="h4 mb-4">Photo editing</h4>
+                            <p className="body-2 mb-[3rem] text-n-3">Automatically enhance your photos using our AI app&apos;s photo editing feature. Try it now!</p>
+                        
+                        </div>
+
+                        <PhotoChatMessage/>                                   {/*chat message component imported from design*/}
+
+
+                    </div>
+
+                </div>
+
+
+{/* ---------------------------------------------------(service-3) box-3 of the bento box------------------------------------ */}
+
+
+
             </div>
 
         </div>
