@@ -2,7 +2,7 @@ import { service1, service2, service3, check } from "../assets"
 import { brainwaveServices, brainwaveServicesIcons } from "../constants"
 import Generating from "./Generating"
 import Heading from "./Heading"
-import { PhotoChatMessage } from "./design/Services"
+import { Gradient, PhotoChatMessage, VideoBar, VideoChatMessage } from "./design/Services"
 import Section from "./section"
 
 const Services = () => {
@@ -67,14 +67,49 @@ const Services = () => {
 
                     </div>
 
-                </div>
+                
 
 
 {/* ---------------------------------------------------(service-3) box-3 of the bento box------------------------------------ */}
 
 
+                    <div className="p-4 bg-n-7 rounded-3xl overflow-hiddenlg:min-h-[46rem]">
+
+                        <div className="py-12 px-4 | xl:px-8">                        {/*wrapper div for the description of the services*/}
+                        
+                            <h4 className="h4 mb-4">Video generation</h4>
+                            <p className="body-2 mb-[2rem] text-n-3">The world&apos;s most powerful AI photo and video art generation engine. What will you create?</p>
+                        
+                            <ul className="flex items-center justify-between">
+                                {brainwaveServicesIcons.map((item, index)=>(
+                                    <li key={index} className={`rounded-2xl flex items-center justify-center ${index===2 ? 'w-[4.5rem] h-[4.5rem] p-0.25 bg-conic-gradient  md:h-[4.5rem]' : 'flex w-10 h-10 bg-n-6 md:w-15 md:h-15'}`}>
+                                        <div className={index===2 ? 'flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]' : "" }>
+                                            <img src={item} width={24} height={24} alt={item}></img>
+                                        </div>
+                                    </li>
+                                ))}
+                                
+                            </ul>
+
+                        </div>
+
+                        <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden | md:h-[25rem]">
+                            <img src={service3} className="w-full h-full object-cover " width={520} height={400} alt="evil robot" />
+                            <VideoChatMessage/>
+                            <VideoBar/>
+                        </div>
+
+                    </div>
+
+                </div>
+{/* ----------------------------------------------------------------------------------------------------------------- */}
+
+                <Gradient/>
+
 
             </div>
+
+
 
         </div>
 
