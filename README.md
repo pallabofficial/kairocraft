@@ -17,7 +17,7 @@ Front-end:-<br>
 • vite<br>
 • Libraries:- Tailwind CSS(for styling)<br><br>  
 
-## Features
+## Feature
 
 👉 **Beautiful Sections**: Includes hero, services, features, how to use, roadmap, pricing, footer, and header.
 
