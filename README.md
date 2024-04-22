@@ -5,7 +5,7 @@ click here to visit the webpage👉👉 [https://kairocraft.netlify.app/]<br><br
 
 
 ## Description
-Kairocraft - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.
+Kairocraft - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamles animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.
 <br> [Note]: This project is primarily front-end with no backend integration.<br><br>  
 
 
